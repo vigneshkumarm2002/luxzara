@@ -25,7 +25,7 @@ export default function Hero() {
                   <p className="mt-6 text-xl leading-8 text-gray-600 ">
                     Step into Luxzara Unisex Salon – where beauty feels like a
                     breeze! Our friendly crew is all about keeping it simple and
-                    super stylish. Drop in, relax, and let's add a dash of
+                    super stylish. Drop in, relax, and lets add a dash of
                     fabulous to your day.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6 w-[fit-content] ">
