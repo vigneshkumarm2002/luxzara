@@ -13,38 +13,38 @@ const solutions = [
   {
     name: "Address",
     description: (
-      <h1 className="sm:text-center">
+      <p className="sm:text-center">
         Janakpuri 1st street,100ft road 1,
         <br />
         Velachery Bypass Road <br />
         near by French Loaf Velachery Chennai,
         <br />
         Tamil Nadu 600042 India
-      </h1>
+      </p>
     ),
     icon: BuildingStorefrontIcon,
   },
   {
     name: "Contact",
     description: (
-      <h1 className="sm:text-center">
-        <Link href="tel:09941414149">099414 14149</Link> <br />
-        <Link href="tel:04448511668">044 4851 1668</Link> <br />
+      <p className="sm:text-center flex flex-col gap-2">
+        <Link href="tel:09941414149">099414 14149</Link> 
+        <Link href="tel:04448511668">044 4851 1668</Link> 
         <Link href="mailto:luxzara.india@gmail.com">
           luxzara.india@gmail.com
         </Link>
-      </h1>
+      </p>
     ),
     icon: PhoneIcon,
   },
   {
     name: "Business Hours",
     description: (
-      <h1 className="sm:text-center">
+      <p className="sm:text-center">
         Everyday
         <br />
         10:00 AM - 09:00 PM
-      </h1>
+      </p>
     ),
     icon: ClockIcon,
   },
@@ -63,10 +63,10 @@ const Map = () => {
         height="400"
         className="relative rounded-md shadow-lg"
         allowFullScreen=""
-        loading="lazy"
+       
         referrerPolicy="no-referrer-when-downgrade"
       >
-        {" "}
+        
       </iframe>
 
       <div className=" grid grid-cols-1 gap-y-6 pt-6 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-8 sm:pt-10 md:grid-cols-3 lg:gap-4  xl:gap-8">

@@ -1,6 +1,7 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const Gallery = () => {
   const totalImages = 40;
@@ -9,8 +10,6 @@ const Gallery = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [visibleImages, setVisibleImages] = useState(imagesPerPage);
   const [transitionClass, setTransitionClass] = useState("");
-
-  const galleryRef = useRef(null);  // Reference for the gallery section
 
   const images = Array.from({ length: 40 }, (_, index) => `Image_${String(index + 1).padStart(3, '0')}.jpg`);
 
@@ -24,8 +23,6 @@ const Gallery = () => {
       setVisibleImages(totalImages);
     } else {
       setVisibleImages(imagesPerPage);
-      // Scroll to the gallery section when Show Less is clicked
-      galleryRef.current.scrollIntoView();
     }
     // Reset transition class after the transition is complete
     const timeoutId = setTimeout(() => setTransitionClass(""), 500);
@@ -56,13 +53,15 @@ const Gallery = () => {
         </p>
       </div>
 
-      <div id="galleryCollection" ref={galleryRef} className={`container-fluid mt-14 ${transitionClass}`}>
+      <div id="galleryCollection" className={`container-fluid mt-14 ${transitionClass}`}>
         {images.slice(0, visibleImages).map((image, index) => (
-          <img
+          <Image
             key={index}
             src={`/assets/gallery/${image}`}
             alt={`Image ${index + 1}`}
             className="gallery-image"
+            width={500}
+            height={500}
           />
         ))}
       </div>

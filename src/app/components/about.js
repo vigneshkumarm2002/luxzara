@@ -4,6 +4,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 import Banner from "./../../../public/assets/banner.png";
+import Image from "next/image";
 
 export default function Example() {
   return (
@@ -15,9 +16,11 @@ export default function Example() {
               className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white"
               aria-hidden="true"
             />
-            <img
+            <Image
               src={Banner.src}
               alt="Banner Image"
+              width={500}
+              height={500}
               className="h-full w-full object-cover rounded-lg sm:rounded-xl bg-gray-800 ring-1 ring-white/10"
             />
 
