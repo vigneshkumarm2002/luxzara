@@ -17,9 +17,7 @@ export default function Hero() {
                     style={{ lineHeight: 1.2 }}
                     className="text-4xl font-bold text-gray-900 sm:text-[54px] font_poppins"
                   >
-                    <span className="text-[#217272] ">Glow Up </span>Your Glam,
-                    <br /> A Unisex Beauty
-                    <span className="text-[#217272]">Wonderland </span>Awaits!
+                    <span className="text-[#217272] ">Glow Up </span>Your Glam,<br/> A Unisex Beauty<span className="text-[#217272]"> Wonderland </span>Awaits!
                   </h1>
 
                   <p className="mt-6 text-xl leading-8 text-gray-600 ">
