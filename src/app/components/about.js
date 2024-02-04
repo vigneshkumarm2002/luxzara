@@ -16,7 +16,7 @@ export default function Example() {
               className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white"
               aria-hidden="true"
             />
-            <Image
+            <Image priority
               src={Banner.src}
               alt="Banner Image"
               width={500}

@@ -40,18 +40,19 @@ export default function Hero() {
                 </div>
                 <div className="w-[100%] px-6 md:px-16 lg:px-0 mt-14 lg:mt-[0px] flex flex-col gap-2 sm:gap-4  justify-center items-center lg:items-start">
                   <div className="relative">
-                    <Image
+                    <Image priority
                       src={hair1.src}
                       alt="Product screenshot"
                       className="h-[350px] object-cover lg:max-w-none rounded-md sm:rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:w-[50rem] "
                       width={2432}
                       height={1442}
+                     
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-md sm:rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                   <div className="flex gap-2 sm:gap-4">
                     <div className="relative">
-                      <Image
+                      <Image priority
                         src={MenHairCut.src}
                         alt="Product screenshot"
                         className="h-[200px] object-cover lg:max-w-none  rounded-md sm:rounded-lg shadow-xl ring-1 ring-gray-400/10 lg:w-[25rem] "
@@ -61,7 +62,7 @@ export default function Hero() {
                       <div className="pointer-events-none absolute inset-0 rounded-md sm:rounded-lg ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
-                      <Image
+                      <Image priority
                         src={Nail.src}
                         alt="Product screenshot"
                         className="h-[200px] object-cover lg:max-w-none rounded-md sm:rounded-lg shadow-xl ring-1 ring-gray-400/10 lg:w-[25rem] "

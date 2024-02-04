@@ -55,7 +55,7 @@ const Gallery = () => {
 
       <div id="galleryCollection" className={`container-fluid mt-14 ${transitionClass}`}>
         {images.slice(0, visibleImages).map((image, index) => (
-          <Image
+          <Image priority
             key={index}
             src={`/assets/gallery/${image}`}
             alt={`Image ${index + 1}`}

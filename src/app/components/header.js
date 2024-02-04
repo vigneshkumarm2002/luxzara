@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "./../../../public/assets/luxzara logo.png";
+import logo from "./../../../public/assets/luxzara-logo.png";
 import Instagram from "./../../../public/assets/instagram.png";
 import Whatsapp from "./../../../public/assets/whatsapp.png";
 import Link from "next/link";
@@ -33,17 +33,17 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <ScrollLink to="home" smooth={true} duration={500}>
             <span className="sr-only">Luxzara</span>
-            <Image className="h-9 w-auto" width={200} height={80} src={logo.src} alt="" />
+            <Image priority className="h-9 w-auto" width={200} height={80} src={logo.src} alt="Logo" />
           </ScrollLink>
         </div>
         <div className="flex gap-4 lg:hidden items-center">
           <Link href="https://www.instagram.com/luxzara/?hl=en" target="blank">
        
-            <Image className="w-5 h-5" width={20} height={20} src={Instagram.src} alt="Instagram" />
+            <Image priority className="w-5 h-5" width={20} height={20} src={Instagram.src} alt="Instagram" />
           </Link>
           <Link href="https://wa.me/+919941414149" target="blank">
          
-            <Image className="w-5 h-5" width={20} height={20}  src={Whatsapp.src} alt="Whatsapp" />
+            <Image priority className="w-5 h-5" width={20} height={20}  src={Whatsapp.src} alt="Whatsapp" />
           </Link>
           <button
             type="button"
@@ -71,11 +71,11 @@ const Header = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-6">
           <Link href="https://www.instagram.com/luxzara/?hl=en" target="blank">
             
-            <Image className="w-6 h-6" width={24} height={24} src={Instagram.src} alt="Instagram" />
+            <Image priority className="w-6 h-6" width={24} height={24} src={Instagram.src} alt="Instagram" />
           </Link>
           <Link href="https://wa.me/+919941414149" target="blank">
             
-            <Image className="w-6 h-6" width={24} height={24} src={Whatsapp.src} alt="Whatsapp" />
+            <Image priority className="w-6 h-6" width={24} height={24} src={Whatsapp.src} alt="Whatsapp" />
           </Link>
         </div>
       </nav>
@@ -90,8 +90,8 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <div className="flex lg:flex-1">
               <ScrollLink to="home" smooth={true} duration={500}>
-                <span className="sr-only">Your Company</span>
-                <Image className="h-7 w-auto" height={60} width={200} src={logo.src} alt="" />
+                <span className="sr-only">Luxzara</span>
+                <Image priority className="h-7 w-auto" height={60} width={200} src={logo.src} alt="Logo" />
               </ScrollLink>
             </div>
             <button
